@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <head>
+        </head>
+        
+        <p>
+        Here is some dummy text. <br>
+        The purpose of this is to experiment <br>
+        with it using various CSS methods.
+        <form>
+            Border color (enter "red", "blue", or "green"): <br>
+            <input id="bdColor"><br>
+            Background color (enter "red", "blue", or "green"): <br>
+            <input id="bkColor"> <br>
+            <button type="button" onclick="changeColors()">Apply</button>
+            
+        </form>
+        </p>
+        
+        
+        
+        <script type="text/javascript">
+            function changeColors() {
+                var bdColor = document.getElementById("bdColor").value;
+                var bkColor = document.getElementById("bkColor").value;
+                
+                document.body.style.borderColor = bdColor;
+                document.body.style.backgroundColor = bkColor;
+            }
+        
+        </script>
+    <body>
+<html>

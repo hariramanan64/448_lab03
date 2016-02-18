@@ -1,0 +1,42 @@
+<html>
+    <body>
+        
+        <head>Password validator</head>
+
+        <p>Password 1:</p>
+
+        <input id="pw1">
+        
+        <p>password 2:</p>
+        
+        <input id="pw2">
+
+        <p id="msg"></p>
+        
+        <button type="button" onclick="myFunc()">Validate</button>
+
+        <script>
+            function myFunc() {
+                var x, y, message;
+
+                // Get the value of both input fields
+                x = document.getElementById("pw1").value;
+                y = document.getElementById("pw2").value;
+                
+                // if passwords dont match
+                if (x != y) {
+                    message = "Passwords do not match";
+                // If passwords are shorter than 8 characters
+                } else if(x.length < 8) {
+                    message = "Passwords must be at least 8 characters long";
+                }
+                else
+                    message = "Password validated";
+                document.getElementById("msg").innerHTML = message;
+            }
+        </script>
+
+    </body>
+</html> 
+    
+        
